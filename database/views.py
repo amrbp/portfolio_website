@@ -9,7 +9,7 @@ def about(request):
     return render(request, 'main/about.html')
 
 def project(request):
-    project = Projects.objects.all()
+    project = Projects.objects.all().order_by("-create")
     category = Category.objects.all()
     p_form = FeedbackForm()
 
@@ -31,7 +31,7 @@ def project(request):
 
 
 def feedback(request):
-    feedback = Feedback.objects.all().order_by("-create")
+    feedback = Feedback.objects.all().order_by("-create")[:4]
 
     context = {
         'feedback': feedback,
