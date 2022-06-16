@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load crispy_forms_tags %}
 {% block title %}
     project
 {% endblock title %}
@@ -37,7 +38,7 @@
                             <div class="col-sm-3 pb-4">
                                 <div class="card"
                                      data-toggle="modal"
-                                     data-target="#exampleModal{{ p_all.category }}{{p_all.id}}all_project">
+                                     data-target="#exampleModal{{ p_all.category }}{{ p_all.id }}all_project">
                                     <img src="{{ p_all.img.url }}"
                                          class="card-img-top rounded imgUNcover"
                                          alt="...">
@@ -47,9 +48,8 @@
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="modal fade"
-                                 id="exampleModal{{ p_all.category }}{{p_all.id}}all_project"
+                                 id="exampleModal{{ p_all.category }}{{ p_all.id }}all_project"
                                  tabindex="-1"
                                  aria-labelledby="exampleModalLabel{{ p_all.name }}"
                                  aria-hidden="true">
@@ -72,6 +72,17 @@
                                                 <div class="col-11 fs-12 text-muted">{{ p_all.date }}</div>
                                             </div>
                                             <img src="{{ p_all.img.url }}" class="card-img-top rounded" alt="">
+                                            <div class="card p-5">
+                                                <div class="h4 pb-4 pt-5">You can comment in the feedback.</div>
+                                                <form action="" method="POST">
+                                                    {% csrf_token %}
+                                                    <input type="hidden" name="project_comment_id" value="{{p_all.id}}">
+                                                    {{ p_form|crispy }}
+                                                    <div class="text-center">
+                                                        <button type="submit" class="btn btn-success" name="submit_p_form">Send Post</button>
+                                                    </div>
+                                                </form>
+                                            </div>
                                         </div>
                                         <div class="modal-footer">
                                             <a type="button"
@@ -101,7 +112,7 @@
                                     <div class="col-sm-3 pb-4">
                                         <div class="card"
                                              data-toggle="modal"
-                                             data-target="#exampleModal{{ p_nav.category }}{{p_all.id}}">
+                                             data-target="#exampleModal{{ p_nav.category }}{{ p_all.id }}">
                                             <img src="{{ p_all.img.url }}"
                                                  class="card-img-top rounded imgUNcover"
                                                  alt="...">
@@ -109,9 +120,8 @@
                                                 <h5 class="card-title h6">{{ p_all.name }}</h5>
                                                 <p class="card-text fs-12 text-muted">{{ p_all.date }}</p>
                                             </div>
-
                                             <div class="modal fade"
-                                                 id="exampleModal{{ p_nav.category }}{{p_all.id}}"
+                                                 id="exampleModal{{ p_nav.category }}{{ p_all.id }}"
                                                  tabindex="-1"
                                                  aria-labelledby="exampleModalLabel{{ p_all.name }}"
                                                  aria-hidden="true">

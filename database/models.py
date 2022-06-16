@@ -34,3 +34,13 @@ class Projects (models.Model):
 
     def __str__(self) -> str:
         return self.name
+
+
+class Feedback (models.Model):
+    name = models.CharField(max_length=50)
+    project_comment = models.ForeignKey(Projects, on_delete=models.CASCADE, null=True, blank=True)
+    from_where = models.CharField(max_length=50)
+    massage = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return self.massage

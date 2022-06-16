@@ -9,10 +9,14 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="h1 pb-4 ls-3">Feedback</div>
-                    <p>Take a look at the reviews of my customers and ensure the quality of my services.</p>
                 </div>
-                <div class="col-lg-8">
-                    {% for fb in contact %}{{ fb.name }}{% endfor %}
+                <div class="col-lg-8    ">
+                    {% for fb in feedback %}
+                        <div class="border-bottom border-top pt-4 pb-4">
+                            <span class="h5">{{ fb.name }} &nbsp;&nbsp;&nbsp;</span><span class="h6">@{{ fb.from_where }}</span>
+                            <div class="h6 pt-2">{{ fb.project_comment }} :: "{{ fb.massage }}"</div>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

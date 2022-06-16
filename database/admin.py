@@ -4,3 +4,4 @@ from database.models import *
 admin.site.register(Contact)
 admin.site.register(Projects)
 admin.site.register(Category)
+admin.site.register(Feedback)
