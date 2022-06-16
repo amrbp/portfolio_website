@@ -2,14 +2,14 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from database.forms import *
 from django.urls import reverse
-from .models import *
+from .models import Projects,Category,Contact,Feedback
 
 
 def about(request):
     return render(request, 'main/about.html')
 
 def project(request):
-    project = Projects.objects.all().order_by("Date")
+    project = Projects.objects.all()
     category = Category.objects.all()
     p_form = FeedbackForm()
 

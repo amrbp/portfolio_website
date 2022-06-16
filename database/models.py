@@ -1,5 +1,4 @@
 from django.db import models
-import datetime
 
 
 class Contact (models.Model):
@@ -30,7 +29,8 @@ class Projects (models.Model):
     stack = models.CharField(max_length=50)
     link=models.URLField(max_length = 200,blank=True)
     githublink = models.URLField(max_length = 200,blank=True)
-    date = models.DateField(("Date"), default=datetime.date.today)
+    create = models.DateTimeField(auto_now_add=True)
+    
 
     def __str__(self) -> str:
         return self.name
@@ -41,6 +41,8 @@ class Feedback (models.Model):
     project_comment = models.ForeignKey(Projects, on_delete=models.CASCADE, null=True, blank=True)
     from_where = models.CharField(max_length=50)
     massage = models.TextField(blank=True, null=True)
+    create = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.massage
+
