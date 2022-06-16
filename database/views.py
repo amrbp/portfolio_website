@@ -31,7 +31,7 @@ def project(request):
 
 
 def feedback(request):
-    feedback = Feedback.objects.all()
+    feedback = Feedback.objects.all().order_by("-create")
 
     context = {
         'feedback': feedback,
