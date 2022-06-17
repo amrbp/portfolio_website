@@ -43,7 +43,7 @@ def contact(request):
     if form.is_valid():
         form.save()
         form= ContactForm()
-        return HttpResponseRedirect(reverse('feedback'))
+        return HttpResponseRedirect(reverse('contact'))
     
     context={
         'form' : form ,
