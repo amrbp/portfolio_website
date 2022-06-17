@@ -23,11 +23,12 @@ header {
     padding-right: auto;
 }
 
-img.rounded-circle {
+img.circle {
     object-fit: cover;
-    border-radius: 50%;
+    object-position: top;
     height: 140px;
     width: 140px;
+    
 }
 
 [aria-current="page"] {
@@ -118,7 +119,7 @@ img.rounded-circle {
 }
 
 .experience-work .box{
-    width: 500px;
+    width: 430px;
 }
 
 .experience-work .h1 {
@@ -127,6 +128,8 @@ img.rounded-circle {
 
 .experience-work .box a{
     float: right;
+    
+
 }
 
 footer a {
@@ -214,10 +217,8 @@ footer a:hover {
 }
     
 .center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
   }
