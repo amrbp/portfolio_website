@@ -1,57 +1,60 @@
-
-
-
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
     body {
         font-family: "Mukta", sans-serif;
         color: #061F38;
     }
-    
+
     .page {
         max-width: 700px;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     header {
         width: 100%;
         height: 420px;
         padding-left: 100px;
-    
+
     }
-    
+
     .menu {
         line-height: 5em;
         padding-top: 80px;
-       margin-right: 90px;
+        margin-right: 90px;
     }
-    .menu .image-cropper{
+
+    .menu .image-cropper {
         padding-left: 70px;
     }
-    .menu .h1{
+
+    .menu .h1 {
         padding-left: 77px;
     }
-    .menu .nav{
+
+    .menu .nav {
         margin-left: -40px;
     }
+
     img.circle {
         object-fit: cover;
         object-position: top;
         height: 140px;
         width: 140px;
-    
+
     }
-    
+
     [aria-current="page"] {
         pointer-events: auto;
         cursor: pointer;
         text-decoration: none;
         color: black;
     }
+
     /* <-contact-> */
-    .contact-page{
+    .contact-page {
         margin: 0px 50px 50px 50px;
     }
+
     .menu a {
         box-shadow: inset 0 0 0 0 black;
         color: #ffffff;
@@ -60,31 +63,31 @@
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
         border-radius: 12px;
     }
-    
+
     .menu a:hover {
         box-shadow: inset 100px 0 0 0 black;
         text-decoration: none;
         color: white !important;
         border-radius: 12px;
-    
+
     }
-    
+
     .menu .active {
         background: black;
         border-radius: 12px;
         color: #fff !important;
         font-size: large;
     }
-    
+
     .imgUNcover {
         width: 100%;
         height: 250px;
         object-position: 50% top;
         object-fit: cover;
     }
-    
+
     /* <- about -> */
-    
+
     .hero {
         width: 100%;
         height: 370px;
@@ -92,165 +95,167 @@
         border-radius: 18px;
         padding: 50px;
     }
-    
+
     .ti-5 {
         text-indent: 50px
     }
-    
+
     .lh {
         line-height: 2;
     }
-    
+
     .skill {
         background-color: #ffffff;
         width: 100%;
         height: 580px;
         border-radius: 18px;
     }
-    
+
     .skill .main {
         margin-top: 30px;
     }
-    
+
     .skill .contant {
         margin-top: 40px;
         margin: 50px;
     }
-    
-    .skill .contant .row{
+
+    .skill .contant .row {
         line-height: 30px;
     }
 
-    .skill .contant .contant-text{
+    .skill .contant .contant-text {
         padding-bottom: 20px;
     }
-    
+
     .education {
         width: 100%;
         height: 520px;
         background-color: #ffffff;
     }
-    
+
     .education .main {
         margin-top: 50px;
     }
-    
+
     .experience-work {
         margin: 50px;
         width: 100%;
         height: 300px;
     }
-    
+
     .experience-work .box {
         width: 430px;
     }
-    
+
     .experience-work .h1 {
         margin-left: 44px;
     }
-    
+
     .experience-work .box a {
         float: right;
-    
-    
+
+
     }
-    
-    footer a {  
+
+    footer a {
         box-shadow: inset 0 0 0 0 #f1f8fa;
         margin: 0 -.25rem;
         padding: 0 .25rem;
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     }
-    
+
     footer a:hover {
         box-shadow: inset 100px 0 0 0 #f1f8fa;
         text-decoration: none;
         color: white;
-    
+
     }
-    
-    
+
+
     /* <- feedback -> */
-    
+
     .feedback {
         width: 100%;
         height: 490px;
         letter-spacing: 1px;
     }
-    .feedback .row{
+
+    .feedback .row {
         margin: 0px 50px 50px 50px;
     }
-    
+
     .ls-1 {
         letter-spacing: 1px;
     }
-    
-    
+
+
     .ls-3 {
         letter-spacing: 3px;
     }
-    
+
     /* <-project-> */
-    
+
     .project .font-a {
         color: rgba(0, 0, 0, 0.671);
     }
-    
+
     .project a:hover {
         box-shadow: inset 100px 0 0 0 #f1f8fa;
         text-decoration: none;
         color: #000000;
     }
-    
+
     .project .nav .active {
         background: #f1f8fa;
         border-radius: 8px;
         color: #000000;
     }
-    
+
     .project a {
         font-size: 14px;
     }
-    
+
     .project .modal-footer a {
         box-shadow: inset 100px 0 0 0 #ffffff;
         text-decoration: none;
         color: #000000;
         border-color: #000000;
     }
-    
+
     .project .modal-footer a:hover {
         box-shadow: inset 100px 0 0 0 #000000;
         text-decoration: none;
         color: #ffffff;
     }
-    .project .card-group{
+
+    .project .card-group {
         margin: 50px 50px -50px 50px;
     }
-    
+
     .fs-18 {
         font-size: 18px;
     }
-    
+
     .fs-14 {
         font-size: 14px;
     }
-    
+
     .fs-12 {
         font-size: 12px;
     }
-    
+
     .fs-10 {
         font-size: 10px;
     }
-    
+
     .center {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 50px;
     }
-    
+
     .btn-1 {
         width: 100px;
         height: 50px;
@@ -263,61 +268,69 @@
         font-size: 16px;
         outline: none;
     }
-    
-    .btn-1:hover{
+
+    .btn-1:hover {
         box-shadow: inset 100px 0 0 0 #197EE3;
         cursor: pointer;
         color: #000000;
         border-radius: 4px;
     }
- }
+    .card:hover {
+        transform: scale(1.1);
+        transition: transform 1s;
+
+    }
+}
 
 
-@media (min-width: 576px) and (max-width: 767.98px) { 
+@media (min-width: 576px) and (max-width: 767.98px) {
     body {
         font-family: "Mukta", sans-serif;
         color: #061F38;
     }
-    
+
     .page {
         max-width: 700px;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     header {
         width: 100%;
         height: 420px;
         padding-left: 100px;
-    
+
     }
-    
+
     .menu {
         line-height: 5em;
         padding-top: 80px;
-       margin-right: 90px;
+        margin-right: 90px;
     }
-    .menu .image-cropper{
+
+    .menu .image-cropper {
         padding-left: 138px;
     }
-    .menu .h1{
+
+    .menu .h1 {
         padding-left: 143px;
     }
+
     img.circle {
         object-fit: cover;
         object-position: top;
         height: 140px;
         width: 140px;
-    
+
     }
-    
+
     [aria-current="page"] {
         pointer-events: auto;
         cursor: pointer;
         text-decoration: none;
         color: black;
     }
-    
+
     .menu a {
         box-shadow: inset 0 0 0 0 black;
         color: #ffffff;
@@ -326,31 +339,31 @@
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
         border-radius: 12px;
     }
-    
+
     .menu a:hover {
         box-shadow: inset 100px 0 0 0 black;
         text-decoration: none;
         color: white !important;
         border-radius: 12px;
-    
+
     }
-    
+
     .menu .active {
         background: black;
         border-radius: 12px;
         color: #fff !important;
         font-size: large;
     }
-    
+
     .imgUNcover {
         width: 100%;
         height: 250px;
         object-position: 50% top;
         object-fit: cover;
     }
-    
+
     /* <- about -> */
-    
+
     .hero {
         width: 100%;
         height: 320px;
@@ -358,158 +371,158 @@
         border-radius: 18px;
         padding: 50px;
     }
-    
+
     .ti-5 {
         text-indent: 50px
     }
-    
+
     .lh {
         line-height: 2;
     }
-    
+
     .skill {
         background-color: #ffffff;
         width: 100%;
         height: 580px;
         border-radius: 18px;
     }
-    
+
     .skill .main {
         margin-top: 30px;
     }
-    
+
     .skill .contant {
         margin-top: 40px;
     }
-    
-    .skill .contant .row{
+
+    .skill .contant .row {
         line-height: 30px;
     }
 
-    .skill .contant .contant-text{
+    .skill .contant .contant-text {
         padding-bottom: 20px;
     }
-    
+
     .education {
         width: 100%;
         height: 520px;
         background-color: #ffffff;
     }
-    
+
     .education .main {
         margin-top: 50px;
     }
-    
+
     .experience-work {
         margin: 50px;
         width: 100%;
         height: 300px;
     }
-    
+
     .experience-work .box {
         width: 430px;
     }
-    
+
     .experience-work .h1 {
         margin-left: 60px;
     }
-    
+
     .experience-work .box a {
         float: right;
-    
-    
+
+
     }
-    
-    footer a {  
+
+    footer a {
         box-shadow: inset 0 0 0 0 #f1f8fa;
         margin: 0 -.25rem;
         padding: 0 .25rem;
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     }
-    
+
     footer a:hover {
         box-shadow: inset 100px 0 0 0 #f1f8fa;
         text-decoration: none;
         color: white;
-    
+
     }
-    
-    
+
+
     /* <- feedback -> */
-    
+
     .feedback {
         width: 100%;
         height: 490px;
         letter-spacing: 1px;
     }
-    
+
     .ls-1 {
         letter-spacing: 1px;
     }
-    
-    
+
+
     .ls-3 {
         letter-spacing: 3px;
     }
-    
+
     /* <-project-> */
-    
+
     .project .font-a {
         color: rgba(0, 0, 0, 0.671);
     }
-    
+
     .project a:hover {
         box-shadow: inset 100px 0 0 0 #f1f8fa;
         text-decoration: none;
         color: #000000;
     }
-    
+
     .project .nav .active {
         background: #f1f8fa;
         border-radius: 8px;
         color: #000000;
     }
-    
+
     .project a {
         font-size: 14px;
     }
-    
+
     .project .modal-footer a {
         box-shadow: inset 100px 0 0 0 #ffffff;
         text-decoration: none;
         color: #000000;
         border-color: #000000;
     }
-    
+
     .project .modal-footer a:hover {
         box-shadow: inset 100px 0 0 0 #000000;
         text-decoration: none;
         color: #ffffff;
     }
-    
+
     .fs-18 {
         font-size: 18px;
     }
-    
+
     .fs-14 {
         font-size: 14px;
     }
-    
+
     .fs-12 {
         font-size: 12px;
     }
-    
+
     .fs-10 {
         font-size: 10px;
     }
-    
+
     .center {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 50px;
     }
-    
+
     .btn-1 {
         width: 100px;
         height: 50px;
@@ -522,56 +535,62 @@
         font-size: 16px;
         outline: none;
     }
-    
-    .btn-1:hover{
+
+    .btn-1:hover {
         box-shadow: inset 100px 0 0 0 #197EE3;
         cursor: pointer;
         color: #000000;
         border-radius: 4px;
     }
- }
+    .card:hover {
+        transform: scale(1.1);
+        transition: transform 1s;
+
+    }
+
+}
 
 
-@media (min-width: 768px) and (max-width: 991.98px) { 
+@media (min-width: 768px) and (max-width: 991.98px) {
     body {
         font-family: "Mukta", sans-serif;
         color: #061F38;
     }
-    
+
     .page {
         max-width: 700px;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     header {
         width: 100%;
         height: 300px;
         padding-left: 100px;
-    
+
     }
-    
+
     .menu {
         line-height: 5em;
         padding-top: 80px;
-       margin-right: 90px;
+        margin-right: 90px;
     }
-    
+
     img.circle {
         object-fit: cover;
         object-position: top;
         height: 140px;
         width: 140px;
-    
+
     }
-    
+
     [aria-current="page"] {
         pointer-events: auto;
         cursor: pointer;
         text-decoration: none;
         color: black;
     }
-    
+
     .menu a {
         box-shadow: inset 0 0 0 0 black;
         color: #ffffff;
@@ -580,31 +599,31 @@
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
         border-radius: 12px;
     }
-    
+
     .menu a:hover {
         box-shadow: inset 100px 0 0 0 black;
         text-decoration: none;
         color: white !important;
         border-radius: 12px;
-    
+
     }
-    
+
     .menu .active {
         background: black;
         border-radius: 12px;
         color: #fff !important;
         font-size: large;
     }
-    
+
     .imgUNcover {
         width: 100%;
         height: 250px;
         object-position: 50% top;
         object-fit: cover;
     }
-    
+
     /* <- about -> */
-    
+
     .hero {
         width: 100%;
         height: 280px;
@@ -612,158 +631,158 @@
         border-radius: 18px;
         padding: 50px;
     }
-    
+
     .ti-5 {
         text-indent: 50px
     }
-    
+
     .lh {
         line-height: 2;
     }
-    
+
     .skill {
         background-color: #ffffff;
         width: 100%;
         height: 550px;
         border-radius: 18px;
     }
-    
+
     .skill .main {
         margin-top: 50px;
     }
-    
+
     .skill .contant {
         margin-top: 80px;
     }
-    
-    .skill .contant .row{
+
+    .skill .contant .row {
         line-height: 30px;
     }
 
-    .skill .contant .contant-text{
+    .skill .contant .contant-text {
         padding-bottom: 20px;
     }
-    
+
     .education {
         width: 100%;
         height: 520px;
         background-color: #ffffff;
     }
-    
+
     .education .main {
         margin-top: 50px;
     }
-    
+
     .experience-work {
         margin: 50px;
         width: 100%;
         height: 300px;
     }
-    
+
     .experience-work .box {
         width: 430px;
     }
-    
+
     .experience-work .h1 {
         margin-left: 150px;
     }
-    
+
     .experience-work .box a {
         float: right;
-    
-    
+
+
     }
-    
+
     footer a {
         box-shadow: inset 0 0 0 0 #f1f8fa;
         margin: 0 -.25rem;
         padding: 0 .25rem;
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     }
-    
+
     footer a:hover {
         box-shadow: inset 100px 0 0 0 #f1f8fa;
         text-decoration: none;
         color: white;
-    
+
     }
-    
-    
+
+
     /* <- feedback -> */
-    
+
     .feedback {
         width: 100%;
         height: 490px;
         letter-spacing: 1px;
     }
-    
+
     .ls-1 {
         letter-spacing: 1px;
     }
-    
-    
+
+
     .ls-3 {
         letter-spacing: 3px;
     }
-    
+
     /* <-project-> */
-    
+
     .project .font-a {
         color: rgba(0, 0, 0, 0.671);
     }
-    
+
     .project a:hover {
         box-shadow: inset 100px 0 0 0 #f1f8fa;
         text-decoration: none;
         color: #000000;
     }
-    
+
     .project .nav .active {
         background: #f1f8fa;
         border-radius: 8px;
         color: #000000;
     }
-    
+
     .project a {
         font-size: 14px;
     }
-    
+
     .project .modal-footer a {
         box-shadow: inset 100px 0 0 0 #ffffff;
         text-decoration: none;
         color: #000000;
         border-color: #000000;
     }
-    
+
     .project .modal-footer a:hover {
         box-shadow: inset 100px 0 0 0 #000000;
         text-decoration: none;
         color: #ffffff;
     }
-    
+
     .fs-18 {
         font-size: 18px;
     }
-    
+
     .fs-14 {
         font-size: 14px;
     }
-    
+
     .fs-12 {
         font-size: 12px;
     }
-    
+
     .fs-10 {
         font-size: 10px;
     }
-    
+
     .center {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 50px;
     }
-    
+
     .btn-1 {
         width: 100px;
         height: 50px;
@@ -776,57 +795,62 @@
         font-size: 16px;
         outline: none;
     }
-    
-    .btn-1:hover{
+
+    .btn-1:hover {
         box-shadow: inset 100px 0 0 0 #197EE3;
         cursor: pointer;
         color: #000000;
         border-radius: 4px;
     }
- }
+    .card:hover {
+        transform: scale(1.1);
+        transition: transform 1s;
+
+    }
+}
 
 
-@media (min-width: 992px) and (max-width: 1199.98px) { 
+@media (min-width: 992px) and (max-width: 1199.98px) {
     body {
         font-family: "Mukta", sans-serif;
         color: #061F38;
     }
-    
+
     .page {
         max-width: 700px;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     header {
         width: 100%;
         height: 300px;
         padding-left: 100px;
-    
+
     }
-    
+
     .menu {
         line-height: 5em;
         padding-top: 80px;
         padding-left: 60px;
         padding-right: auto;
     }
-    
+
     img.circle {
         object-fit: cover;
         object-position: top;
         height: 140px;
         width: 140px;
-    
+
     }
-    
+
     [aria-current="page"] {
         pointer-events: auto;
         cursor: pointer;
         text-decoration: none;
         color: black;
     }
-    
+
     .menu a {
         box-shadow: inset 0 0 0 0 black;
         color: #ffffff;
@@ -835,31 +859,31 @@
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
         border-radius: 12px;
     }
-    
+
     .menu a:hover {
         box-shadow: inset 100px 0 0 0 black;
         text-decoration: none;
         color: white !important;
         border-radius: 12px;
-    
+
     }
-    
+
     .menu .active {
         background: black;
         border-radius: 12px;
         color: #fff !important;
         font-size: large;
     }
-    
+
     .imgUNcover {
         width: 100%;
         height: 250px;
         object-position: 50% top;
         object-fit: cover;
     }
-    
+
     /* <- about -> */
-    
+
     .hero {
         width: 100%;
         height: 280px;
@@ -867,151 +891,151 @@
         border-radius: 18px;
         padding: 50px;
     }
-    
+
     .ti-5 {
         text-indent: 50px
     }
-    
+
     .lh {
         line-height: 2;
     }
-    
+
     .skill {
         background-color: #ffffff;
         width: 100%;
         height: 360px;
         border-radius: 18px;
     }
-    
+
     .skill .main {
         margin-top: 150px;
     }
-    
+
     .skill .contant {
         margin-top: 80px;
     }
-    
-    
+
+
     .education {
         width: 100%;
         height: 400px;
         background-color: #ffffff;
     }
-    
+
     .education .main {
         margin-top: 160px;
     }
-    
+
     .experience-work {
         margin: 50px;
         width: 100%;
         height: 300px;
     }
-    
+
     .experience-work .box {
         width: 430px;
     }
-    
+
     .experience-work .h1 {
         margin-left: 340px;
     }
-    
+
     .experience-work .box a {
         float: right;
-    
-    
+
+
     }
-    
+
     footer a {
         box-shadow: inset 0 0 0 0 #f1f8fa;
         margin: 0 -.25rem;
         padding: 0 .25rem;
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     }
-    
+
     footer a:hover {
         box-shadow: inset 100px 0 0 0 #f1f8fa;
         text-decoration: none;
         color: white;
-    
+
     }
-    
-    
+
+
     /* <- feedback -> */
-    
+
     .feedback {
         width: 100%;
         height: 490px;
         letter-spacing: 1px;
     }
-    
+
     .ls-1 {
         letter-spacing: 1px;
     }
-    
-    
+
+
     .ls-3 {
         letter-spacing: 3px;
     }
-    
+
     /* <-project-> */
-    
+
     .project .font-a {
         color: rgba(0, 0, 0, 0.671);
     }
-    
+
     .project a:hover {
         box-shadow: inset 100px 0 0 0 #f1f8fa;
         text-decoration: none;
         color: #000000;
     }
-    
+
     .project .nav .active {
         background: #f1f8fa;
         border-radius: 8px;
         color: #000000;
     }
-    
+
     .project a {
         font-size: 14px;
     }
-    
+
     .project .modal-footer a {
         box-shadow: inset 100px 0 0 0 #ffffff;
         text-decoration: none;
         color: #000000;
         border-color: #000000;
     }
-    
+
     .project .modal-footer a:hover {
         box-shadow: inset 100px 0 0 0 #000000;
         text-decoration: none;
         color: #ffffff;
     }
-    
+
     .fs-18 {
         font-size: 18px;
     }
-    
+
     .fs-14 {
         font-size: 14px;
     }
-    
+
     .fs-12 {
         font-size: 12px;
     }
-    
+
     .fs-10 {
         font-size: 10px;
     }
-    
+
     .center {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 50px;
     }
-    
+
     .btn-1 {
         width: 100px;
         height: 50px;
@@ -1024,56 +1048,61 @@
         font-size: 16px;
         outline: none;
     }
-    
-    .btn-1:hover{
+
+    .btn-1:hover {
         box-shadow: inset 100px 0 0 0 #197EE3;
         cursor: pointer;
         color: #000000;
         border-radius: 4px;
     }
- }
+    .card:hover {
+        transform: scale(1.1);
+        transition: transform 1s;
+
+    }
+}
 
 @media (min-width: 1200px) {
     body {
         font-family: "Mukta", sans-serif;
         color: #061F38;
     }
-    
+
     .page {
         max-width: 700px;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     header {
         width: 100%;
         height: 300px;
         padding-left: 100px;
-    
+
     }
-    
+
     .menu {
         line-height: 5em;
         padding-top: 80px;
         padding-left: 60px;
         padding-right: auto;
     }
-    
+
     img.circle {
         object-fit: cover;
         object-position: top;
         height: 140px;
         width: 140px;
-    
+
     }
-    
+
     [aria-current="page"] {
         pointer-events: auto;
         cursor: pointer;
         text-decoration: none;
         color: black;
     }
-    
+
     .menu a {
         box-shadow: inset 0 0 0 0 black;
         color: #ffffff;
@@ -1082,31 +1111,31 @@
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
         border-radius: 12px;
     }
-    
+
     .menu a:hover {
         box-shadow: inset 100px 0 0 0 black;
         text-decoration: none;
         color: white !important;
         border-radius: 12px;
-    
+
     }
-    
+
     .menu .active {
         background: black;
         border-radius: 12px;
         color: #fff !important;
         font-size: large;
     }
-    
+
     .imgUNcover {
         width: 100%;
         height: 250px;
         object-position: 50% top;
         object-fit: cover;
     }
-    
+
     /* <- about -> */
-    
+
     .hero {
         width: 100%;
         height: 280px;
@@ -1114,151 +1143,151 @@
         border-radius: 18px;
         padding: 50px;
     }
-    
+
     .ti-5 {
         text-indent: 50px
     }
-    
+
     .lh {
         line-height: 2;
     }
-    
+
     .skill {
         background-color: #ffffff;
         width: 100%;
         height: 360px;
         border-radius: 18px;
     }
-    
+
     .skill .main {
         margin-top: 150px;
     }
-    
+
     .skill .contant {
         margin-top: 80px;
     }
-    
-    
+
+
     .education {
         width: 100%;
         height: 400px;
         background-color: #ffffff;
     }
-    
+
     .education .main {
         margin-top: 160px;
     }
-    
+
     .experience-work {
         margin: 50px;
         width: 100%;
         height: 300px;
     }
-    
+
     .experience-work .box {
         width: 430px;
     }
-    
+
     .experience-work .h1 {
         margin-left: 340px;
     }
-    
+
     .experience-work .box a {
         float: right;
-    
-    
+
+
     }
-    
+
     footer a {
         box-shadow: inset 0 0 0 0 #f1f8fa;
         margin: 0 -.25rem;
         padding: 0 .25rem;
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     }
-    
+
     footer a:hover {
         box-shadow: inset 100px 0 0 0 #f1f8fa;
         text-decoration: none;
         color: white;
-    
+
     }
-    
-    
+
+
     /* <- feedback -> */
-    
+
     .feedback {
         width: 100%;
         height: 490px;
         letter-spacing: 1px;
     }
-    
+
     .ls-1 {
         letter-spacing: 1px;
     }
-    
-    
+
+
     .ls-3 {
         letter-spacing: 3px;
     }
-    
+
     /* <-project-> */
-    
+
     .project .font-a {
         color: rgba(0, 0, 0, 0.671);
     }
-    
+
     .project a:hover {
         box-shadow: inset 100px 0 0 0 #f1f8fa;
         text-decoration: none;
         color: #000000;
     }
-    
+
     .project .nav .active {
         background: #f1f8fa;
         border-radius: 8px;
         color: #000000;
     }
-    
+
     .project a {
         font-size: 14px;
     }
-    
+
     .project .modal-footer a {
         box-shadow: inset 100px 0 0 0 #ffffff;
         text-decoration: none;
         color: #000000;
         border-color: #000000;
     }
-    
+
     .project .modal-footer a:hover {
         box-shadow: inset 100px 0 0 0 #000000;
         text-decoration: none;
         color: #ffffff;
     }
-    
+
     .fs-18 {
         font-size: 18px;
     }
-    
+
     .fs-14 {
         font-size: 14px;
     }
-    
+
     .fs-12 {
         font-size: 12px;
     }
-    
+
     .fs-10 {
         font-size: 10px;
     }
-    
+
     .center {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 50px;
     }
-    
+
     .btn-1 {
         width: 100px;
         height: 50px;
@@ -1271,11 +1300,19 @@
         font-size: 16px;
         outline: none;
     }
-    
-    .btn-1:hover{
+
+    .btn-1:hover {
         box-shadow: inset 100px 0 0 0 #197EE3;
         cursor: pointer;
         color: #000000;
         border-radius: 4px;
     }
-  }
+
+    .card:hover {
+        transform: scale(1.1);
+        transition: transform 1s;
+
+    }
+
+
+}
