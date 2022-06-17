@@ -1,5 +1,5 @@
 body {
-    font-family: "Kdam Thmor Pro", sans-serif;
+    font-family: "Mukta", sans-serif;
     color: #061F38;
 }
 
@@ -28,7 +28,7 @@ img.circle {
     object-position: top;
     height: 140px;
     width: 140px;
-    
+
 }
 
 [aria-current="page"] {
@@ -94,9 +94,10 @@ img.circle {
     border-radius: 18px;
 }
 
-.skill .main{
+.skill .main {
     margin-top: 150px;
 }
+
 .skill .contant {
     margin-top: 80px;
 }
@@ -112,13 +113,13 @@ img.circle {
     margin-top: 160px;
 }
 
-.experience-work{
+.experience-work {
     margin: 50px;
     width: 100%;
     height: 300px;
 }
 
-.experience-work .box{
+.experience-work .box {
     width: 430px;
 }
 
@@ -126,9 +127,9 @@ img.circle {
     margin-left: 340px;
 }
 
-.experience-work .box a{
+.experience-work .box a {
     float: right;
-    
+
 
 }
 
@@ -156,7 +157,7 @@ footer a:hover {
 
 .feedback {
     width: 100%;
-    height: 490px;  
+    height: 490px;
     letter-spacing: 1px;
 }
 
@@ -171,54 +172,74 @@ footer a:hover {
 
 /* <-project-> */
 
-.project .font-a{
-    color :rgba(0, 0, 0, 0.671);
+.project .font-a {
+    color: rgba(0, 0, 0, 0.671);
 }
 
-.project a:hover{
+.project a:hover {
     box-shadow: inset 100px 0 0 0 #f1f8fa;
     text-decoration: none;
     color: #000000;
 }
 
-.project .nav  .active{
+.project .nav .active {
     background: #f1f8fa;
     border-radius: 8px;
     color: #000000;
 }
 
-.project  a{
+.project a {
     font-size: 14px;
 }
 
-.project .modal-footer a{
+.project .modal-footer a {
     box-shadow: inset 100px 0 0 0 #ffffff;
     text-decoration: none;
     color: #000000;
     border-color: #000000;
 }
 
-.project .modal-footer a:hover{
+.project .modal-footer a:hover {
     box-shadow: inset 100px 0 0 0 #000000;
     text-decoration: none;
     color: #ffffff;
 }
 
-.fs-14{
+.fs-14 {
     font-size: 14px;
 }
 
-.fs-12{
+.fs-12 {
     font-size: 12px;
 }
 
-.fs-10{
+.fs-10 {
     font-size: 10px;
 }
-    
+
 .center {
     display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  }
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.btn-1 {
+    width: 100px;
+    height: 50px;
+    border: none;
+    color: #fff;
+    background-color: #061F38;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #197EE3;
+    transition: ease-out 0.3s;
+    font-size: 16px;
+    outline: none;
+}
+
+.btn-1:hover{
+    box-shadow: inset 100px 0 0 0 #197EE3;
+    cursor: pointer;
+    color: #000000;
+    border-radius: 4px;
+}
