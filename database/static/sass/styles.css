@@ -19,7 +19,7 @@ header {
 .menu {
     line-height: 5em;
     padding-top: 80px;
-    padding-left: 100px;
+    padding-left: 60px;
     padding-right: auto;
 }
 
@@ -147,11 +147,6 @@ footer a:hover {
 
 }
 
-/* <- contact -> */
-
-.contact {
-    letter-spacing: 2px;
-}
 
 /* <- feedback -> */
 
@@ -203,6 +198,10 @@ footer a:hover {
     box-shadow: inset 100px 0 0 0 #000000;
     text-decoration: none;
     color: #ffffff;
+}
+
+.fs-18 {
+    font-size: 18px;
 }
 
 .fs-14 {
