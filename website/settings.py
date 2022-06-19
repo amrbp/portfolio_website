@@ -138,7 +138,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static' ,
     BASE_DIR / 'database' / 'static',
     ]
-STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 MEDIA_URL = '/media/'
