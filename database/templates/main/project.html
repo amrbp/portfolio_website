@@ -36,6 +36,7 @@
                     <div class="row">
                         {% for p_all in project %}
                             <div class="col-lg-3 col-md-4 col-sm-5 pb-4 card-group animation">
+                               
                                 <div class="card"
                                      data-toggle="modal"
                                      data-target="#exampleModal{{ p_all.category }}{{ p_all.id }}all_project">
@@ -46,7 +47,8 @@
                                         <h5 class="card-title h6">{{ p_all.name }}</h5>
                                         <p class="card-text fs-12 text-muted">{{ p_all.create }}</p>
                                     </div>
-                                </div>
+                               
+                            </div>
                             </div>
                             <div class="modal fade"
                                  id="exampleModal{{ p_all.category }}{{ p_all.id }}all_project"
@@ -88,12 +90,12 @@
                                             <a type="button"
                                                class="btn btn-outline-secondary"
                                                href="{{ p_all.link }}">Go to website</a>
-                                            {% if p_all.githublink  %}
-                                                <a class="btn btn-primary"
-                                                   style="background-color: #333333;"
-                                                   href="{{ p_all.githublink }}"
-                                                   role="button">
-                                                    <i class="fab fa-github"></i>
+                                               {% if p_all.githublink  %}
+                                            <a class="btn btn-primary"
+                                               style="background-color: #333333;"
+                                               href="{{ p_all.githublink }}"
+                                               role="button">
+                                                <i class="fab fa-github"></i>
                                                 {% else %}
                                                 {% endif %}
                                             </a>
@@ -112,7 +114,7 @@
                         <div class="row">
                             {% for p_all in project %}
                                 {% if p_nav.category == p_all.category %}
-                                    <div class="col-lg-3 col-md-4 col-sm-5 pb-4 card-group animation">
+                                    <div class="col-lg-3 col-md-4 col-sm-5 pb-4 card-group">
                                         <div class="card"
                                              data-toggle="modal"
                                              data-target="#exampleModal{{ p_nav.category }}{{ p_all.id }}">
@@ -123,66 +125,65 @@
                                                 <h5 class="card-title h6">{{ p_all.name }}</h5>
                                                 <p class="card-text fs-12 text-muted">{{ p_all.create }}</p>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal fade"
-                                         id="exampleModal{{ p_nav.category }}{{ p_all.id }}"
-                                         tabindex="-1"
-                                         aria-labelledby="exampleModalLabel{{ p_all.name }}"
-                                         aria-hidden="true">
-                                        <div class="modal-dialog modal-xl ls-1">
-                                            <div class="modal-content pt-4 pb-5 pr-4 pl-4">
-                                                <div class="modal-header">
-                                                    <div class="modal-title h2" id="exampleModalLabel{{ p_all.name }}">{{ p_all.name }}</div>
-                                                    <button type="button" class="Close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="h6 pb-4 pt-3  lh ti-5 text-muted">{{ p_all.description }}</div>
-                                                    <div class="row pt-2 pb-2">
-                                                        <div class="col-1 fs-14 ">stack</div>
-                                                        <div class="col-11 fs-12 text-muted">{{ p_all.stack }}</div>
-                                                    </div>
-                                                    <div class="row pb-5">
-                                                        <div class="col-1 fs-14 ">date</div>
-                                                        <div class="col-11 fs-12 text-muted">{{ p_all.create }}</div>
-                                                    </div>
-                                                    <img src="{{ p_all.img.url }}" class="card-img-top rounded" alt="">
-                                                    <div class="card p-5">
-                                                        <div class="h4 pb-4 pt-5">You can comment in the feedback.</div>
-                                                        <form action="" method="POST">
-                                                            {% csrf_token %}
-                                                            <input type="hidden" name="project_comment_id" value="{{ p_all.id }}">
-                                                            {{ p_form|crispy }}
-                                                            <div class="text-center">
-                                                                <button type="submit" class="btn-1" name="submit_p_form">Send Post</button>
+                                            <div class="modal fade"
+                                                 id="exampleModal{{ p_nav.category }}{{ p_all.id }}"
+                                                 tabindex="-1"
+                                                 aria-labelledby="exampleModalLabel{{ p_all.name }}"
+                                                 aria-hidden="true">
+                                                <div class="modal-dialog modal-xl ls-1">
+                                                    <div class="modal-content pt-4 pb-5 pr-4 pl-4">
+                                                        <div class="modal-header">
+                                                            <div class="modal-title h2" id="exampleModalLabel{{ p_all.name }}">{{ p_all.name }}</div>
+                                                            <button type="button" class="Close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="h6 pb-4 pt-3  lh ti-5 text-muted">{{ p_all.description }}</div>
+                                                            <div class="row pt-2 pb-2">
+                                                                <div class="col-1 fs-14 ">stack</div>
+                                                                <div class="col-11 fs-12 text-muted">{{ p_all.stack }}</div>
                                                             </div>
-                                                        </form>
+                                                            <div class="row pb-5">
+                                                                <div class="col-1 fs-14 ">date</div>
+                                                                <div class="col-11 fs-12 text-muted">{{ p_all.create }}</div>
+                                                            </div>
+                                                            <img src="{{ p_all.img.url }}" class="card-img-top rounded" alt="">
+                                                            <div class="card p-5">
+                                                                <div class="h4 pb-4 pt-5">You can comment in the feedback.</div>
+                                                                <form action="" method="POST">
+                                                                    {% csrf_token %}
+                                                                    <input type="hidden" name="project_comment_id" value="{{ p_all.id }}">
+                                                                    {{ p_form|crispy }}
+                                                                    <div class="text-center">
+                                                                        <button type="submit" class="btn-1" name="submit_p_form">Send Post</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <a type="button"
+                                                               class="btn btn-outline-secondary"
+                                                               href="{{ p_all.link }}">Go to website</a>
+                                                            <a class="btn btn-primary"
+                                                               style="background-color: #333333;"
+                                                               href="{{ p_all.githublink }}"
+                                                               role="button">
+                                                                <i class="fab fa-github"></i>
+                                                            </a>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <a type="button"
-                                                       class="btn btn-outline-secondary"
-                                                       href="{{ p_all.link }}">Go to website</a>
-                                                    <a class="btn btn-primary"
-                                                       style="background-color: #333333;"
-                                                       href="{{ p_all.githublink }}"
-                                                       role="button">
-                                                        <i class="fab fa-github"></i>
-                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            {% endif %}
-                        {% endfor %}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
                     </div>
-                </div>
-            {% endfor %}
+                {% endfor %}
+            </div>
         </div>
-    </div>
-{% endblock content %}
-{% block scripts %}
-{% endblock scripts %}
+    {% endblock content %}
+    {% block scripts %}
+    {% endblock scripts %}
