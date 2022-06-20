@@ -22,6 +22,7 @@ def project(request):
             instance.project_comment = Projects.objects.get(id=request.POST.get('project_comment_id'))
             instance.save()
             p_form = FeedbackForm()
+            messages.success('success!')
 
     context = {
         'project': project,
@@ -45,6 +46,7 @@ def contact(request):
     if form.is_valid():
         form.save()
         form= ContactForm()
+        messages.success('success!')
         return HttpResponseRedirect(reverse('contact'))
     
     context={
