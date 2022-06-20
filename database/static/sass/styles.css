@@ -275,10 +275,15 @@
         color: #000000;
         border-radius: 4px;
     }
-    .card:hover {
+    .animation-card .card:hover {
         transform: scale(1.1);
         transition: transform 1s;
 
+    }
+    .alertposition{
+        position:fixed;
+        top: 30px;
+        right:30px;
     }
 }
 
@@ -542,10 +547,15 @@
         color: #000000;
         border-radius: 4px;
     }
-    .card:hover {
+    .animation-card .card:hover {
         transform: scale(1.1);
         transition: transform 1s;
 
+    }
+    .alertposition{
+        position:fixed;
+        top: 30px;
+        right:30px;
     }
 
 }
@@ -802,10 +812,15 @@
         color: #000000;
         border-radius: 4px;
     }
-    .card:hover {
+    .animation-card .card:hover {
         transform: scale(1.1);
         transition: transform 1s;
 
+    }
+    .alertposition{
+        position:fixed;
+        top: 30px;
+        right:30px;
     }
 }
 
@@ -1055,10 +1070,15 @@
         color: #000000;
         border-radius: 4px;
     }
-    .card:hover {
+    .animation-card .card:hover {
         transform: scale(1.1);
         transition: transform 1s;
 
+    }
+    .alertposition{
+        position:fixed;
+        top: 30px;
+        right:30px;
     }
 }
 
@@ -1308,7 +1328,7 @@
         border-radius: 4px;
     }
 
-    .animation .card:hover {
+    .animation-card .card:hover {
         transform: scale(1.1);
         transition: transform 1s;
 
