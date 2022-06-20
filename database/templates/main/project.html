@@ -36,6 +36,7 @@
                     <div class="row">
                         {% for p_all in project %}
                             <div class="col-lg-3 col-md-4 col-sm-5 pb-4 card-group">
+                                <div class="animation">
                                 <div class="card"
                                      data-toggle="modal"
                                      data-target="#exampleModal{{ p_all.category }}{{ p_all.id }}all_project">
@@ -47,6 +48,7 @@
                                         <p class="card-text fs-12 text-muted">{{ p_all.create }}</p>
                                     </div>
                                 </div>
+                            </div>
                             </div>
                             <div class="modal fade"
                                  id="exampleModal{{ p_all.category }}{{ p_all.id }}all_project"

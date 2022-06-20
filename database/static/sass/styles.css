@@ -1308,7 +1308,7 @@
         border-radius: 4px;
     }
 
-    .card:hover {
+    .animation .card:hover {
         transform: scale(1.1);
         transition: transform 1s;
 
