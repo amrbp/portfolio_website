@@ -28,6 +28,12 @@
                     {% endfor %}
                 </div>
             </nav>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="tab-content pb-5" id="nav-tabContent">
                 <div class="tab-pane fade show active"
                      id="nav-home"
@@ -36,7 +42,6 @@
                     <div class="row">
                         {% for p_all in project %}
                             <div class="col-lg-3 col-md-4 col-sm-5 pb-4 card-group animation">
-                               
                                 <div class="card"
                                      data-toggle="modal"
                                      data-target="#exampleModal{{ p_all.category }}{{ p_all.id }}all_project">
@@ -47,8 +52,7 @@
                                         <h5 class="card-title h6">{{ p_all.name }}</h5>
                                         <p class="card-text fs-12 text-muted">{{ p_all.create }}</p>
                                     </div>
-                               
-                            </div>
+                                </div>
                             </div>
                             <div class="modal fade"
                                  id="exampleModal{{ p_all.category }}{{ p_all.id }}all_project"
@@ -90,12 +94,12 @@
                                             <a type="button"
                                                class="btn btn-outline-secondary"
                                                href="{{ p_all.link }}">Go to website</a>
-                                               {% if p_all.githublink  %}
-                                            <a class="btn btn-primary"
-                                               style="background-color: #333333;"
-                                               href="{{ p_all.githublink }}"
-                                               role="button">
-                                                <i class="fab fa-github"></i>
+                                            {% if p_all.githublink  %}
+                                                <a class="btn btn-primary"
+                                                   style="background-color: #333333;"
+                                                   href="{{ p_all.githublink }}"
+                                                   role="button">
+                                                    <i class="fab fa-github"></i>
                                                 {% else %}
                                                 {% endif %}
                                             </a>
@@ -165,25 +169,27 @@
                                                             <a type="button"
                                                                class="btn btn-outline-secondary"
                                                                href="{{ p_all.link }}">Go to website</a>
-                                                            <a class="btn btn-primary"
-                                                               style="background-color: #333333;"
-                                                               href="{{ p_all.githublink }}"
-                                                               role="button">
-                                                                <i class="fab fa-github"></i>
-                                                            </a>
+                                                            {% if p_all.githublink  %}
+                                                                <a class="btn btn-primary"
+                                                                   style="background-color: #333333;"
+                                                                   href="{{ p_all.githublink }}"
+                                                                   role="button">
+                                                                    <i class="fab fa-github"></i>
+                                                                {% else %}
+                                                                {% endif %}
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                {% endif %}
-                            {% endfor %}
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
                         </div>
-                    </div>
-                {% endfor %}
+                    {% endfor %}
+                </div>
             </div>
-        </div>
-    {% endblock content %}
-    {% block scripts %}
-    {% endblock scripts %}
+        {% endblock content %}
+        {% block scripts %}
+        {% endblock scripts %}
