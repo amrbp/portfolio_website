@@ -35,8 +35,8 @@
                      aria-labelledby="nav-home-tab">
                     <div class="row">
                         {% for p_all in project %}
-                            <div class="col-lg-3 col-md-4 col-sm-5 pb-4 card-group">
-                                <div class="animation">
+                            <div class="col-lg-3 col-md-4 col-sm-5 pb-4 card-group animation">
+                               
                                 <div class="card"
                                      data-toggle="modal"
                                      data-target="#exampleModal{{ p_all.category }}{{ p_all.id }}all_project">
@@ -47,7 +47,7 @@
                                         <h5 class="card-title h6">{{ p_all.name }}</h5>
                                         <p class="card-text fs-12 text-muted">{{ p_all.create }}</p>
                                     </div>
-                                </div>
+                               
                             </div>
                             </div>
                             <div class="modal fade"
@@ -114,7 +114,7 @@
                         <div class="row">
                             {% for p_all in project %}
                                 {% if p_nav.category == p_all.category %}
-                                    <div class="col-lg-3 col-md-4 col-sm-5 pb-4 card-group">
+                                    <div class="col-lg-3 col-md-4 col-sm-5 pb-4 card-group animation">
                                         <div class="card"
                                              data-toggle="modal"
                                              data-target="#exampleModal{{ p_nav.category }}{{ p_all.id }}">
