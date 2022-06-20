@@ -22,7 +22,7 @@ def project(request):
             instance.project_comment = Projects.objects.get(id=request.POST.get('project_comment_id'))
             instance.save()
             p_form = FeedbackForm()
-            messages.success(request,'success!')
+            messages.success(request,'success! You can see the comments on the feedback page.')
 
     context = {
         'project': project,
