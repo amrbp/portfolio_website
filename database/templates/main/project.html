@@ -88,11 +88,14 @@
                                             <a type="button"
                                                class="btn btn-outline-secondary"
                                                href="{{ p_all.link }}">Go to website</a>
+                                               {% if p_all.githublink  %}
                                             <a class="btn btn-primary"
                                                style="background-color: #333333;"
                                                href="{{ p_all.githublink }}"
                                                role="button">
                                                 <i class="fab fa-github"></i>
+                                                {% else %}
+                                                {% endif %}
                                             </a>
                                         </div>
                                     </div>
