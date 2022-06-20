@@ -1313,7 +1313,13 @@
         transition: transform 1s;
 
     }
-
+    .alertposition{
+        position:fixed;
+        top: 0;
+        right:0;
+        width:100px;
+        height: 50px;
+    }
 
 
 }
