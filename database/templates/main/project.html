@@ -5,6 +5,9 @@
     project
 {% endblock title %}
 {% block content %}
+<div class="alert fade show mt-3" id="placement-example" data-mdb-position="top-right" data-mdb-hidden="true" data-mdb-width="25%" role="alert" data-mdb-color="primary">
+    Show me wherever you want!
+  </div>
     <div class="container">
         <div class="h1 pb-4 ls-3">Projects</div>
         <div class="project">
@@ -28,9 +31,7 @@
                     {% endfor %}
                 </div>
             </nav>
-            <div class="alert fade show mt-3" id="placement-example" data-mdb-position="top-right" data-mdb-hidden="true" data-mdb-width="25%" role="alert" data-mdb-color="primary">
-                Show me wherever you want!
-              </div>
+           
             <div class="tab-content pb-5" id="nav-tabContent">
                 <div class="tab-pane fade show active"
                      id="nav-home"
