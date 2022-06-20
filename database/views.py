@@ -46,7 +46,7 @@ def contact(request):
     if form.is_valid():
         form.save()
         form= ContactForm()
-        messages.success(request, 'success!')
+        messages.success(request, 'success! I will reply within 2 days.')
         return HttpResponseRedirect(reverse('contact'))
     
     context={
