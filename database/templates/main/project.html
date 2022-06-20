@@ -5,17 +5,21 @@
     project
 {% endblock title %}
 {% block content %}
-{% if messages %}
-<div class="container">
-<ul class="messages">
-    {% for message in messages %}
-      <div class="alert alert-success" role="alert"> 
-        {{ message }}
-      </div>
-    {% endfor %}
-</ul>
-</div>
-{% endif %}
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}<div class="alert alert-success" role="alert"></div>
+            <div class="toast alert-success" role="alert" style="position: absolute; top: 0; right: 0;">
+                <div class="toast-header">
+                  <strong class="mr-auto">{{ message }}</strong>
+                  <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              </div>
+              {% endfor %}
+        </ul>
+    {% endif %}
+
     <div class="container">
         <div class="h1 pb-4 ls-3">Projects</div>
         <div class="project">
@@ -166,7 +170,9 @@
                                                                 <input type="hidden" name="project_comment_id" value="{{ p_all.id }}">
                                                                 {{ p_form|crispy }}
                                                                 <div class="text-center">
-                                                                    <button type="submit" class="btn-1" name="submit_p_form">Send Post</button>
+                                                                    <button type="submit" class="btn-1" name="submit_p_form">
+                                                                        Send Post
+                                                                    </button>
                                                                 </div>
                                                             </form>
                                                         </div>
@@ -199,5 +205,4 @@
     </div>
 {% endblock content %}
 {% block scripts %}
-
 {% endblock scripts %}
